@@ -1,0 +1,199 @@
+/* -------------------------------
+ * Reset
+ * ----------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* -------------------------------
+ * Base Layout
+ * ----------------------------- */
+body {
+  font-family: 'Courier New', monospace;
+  background: white;
+  color: black;
+  padding: 0 2rem;
+  line-height: 1.6;
+}
+
+/* -------------------------------
+ * Header
+ * ----------------------------- */
+header {
+  min-height: 100vh; /* whole screen */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* -------------------------------
+ * Navigation
+ * ----------------------------- */
+nav {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+/* -------------------------------
+ * Intro Banner
+ * ----------------------------- */
+.banner {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  font-family: 'Courier New', monospace;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.logo {
+  height: 1em;
+  width: auto;
+  margin-bottom: -0.1em; /* due to ff*/
+}
+
+.text {
+}
+
+/* -------------------------------
+ * Main Content
+ * ----------------------------- */
+main {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+section hr {
+  margin-bottom: 1rem;
+}
+
+section h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+ul {
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* -------------------------------
+ * Dark Mode
+ * ----------------------------- */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #121212;
+    color: #f0f0f0;
+  }
+
+  nav a {
+    color: #f0f0f0;
+  }
+
+  section hr {
+    border-color: #444;
+  }
+
+  a {
+    color: #9cf;
+  }
+}
+
+/* -------------------------------
+ * Mobile: up to 599px
+ * ----------------------------- */
+@media (max-width: 599px) {
+  body {
+    padding: 0 1rem;
+    font-size: 0.9rem;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  nav {
+    font-size: 0.75rem;
+  }
+
+  section h2 {
+    font-size: 1rem;
+  }
+}
+
+/* -------------------------------
+ * Tablet: 600px to 1023px
+ * ----------------------------- */
+@media (min-width: 600px) and (max-width: 1023px) {
+  body {
+    padding: 0 2rem;
+    font-size: 1rem;
+  }
+
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  nav {
+    font-size: 0.85rem;
+  }
+
+  section h2 {
+    font-size: 1.1rem;
+  }
+}
+
+/* -------------------------------
+ * Desktop: from 1024px
+ * ----------------------------- */
+@media (min-width: 1024px) {
+  body {
+    padding: 0 3rem;
+    font-size: 1rem;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  nav {
+    font-size: 0.9rem;
+  }
+
+  section h2 {
+    font-size: 1.2rem;
+  }
+}
+
